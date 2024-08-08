@@ -1,3 +1,0 @@
-
-""" Comienzo con el programa """
-
