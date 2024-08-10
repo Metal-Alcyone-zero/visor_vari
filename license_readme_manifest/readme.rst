@@ -21,15 +21,15 @@ Documentacion
     
 - Numero de lineas en codigo del paquete:
 
-    modulos         numero      total= 741
+    modulos         numero      total lineas= 741
 
-    visorquipus     (46)
-    variables_valor (129)
-    control         (494)
+    - visorquipus     (46)
+    - variables_valor (129)
+    - control         (494)
 
-    readme          (72)
+    - readme          (72)
 
-    tenga en cuenta que no se tienen en cuenta 
+    tenga en cuenta, que no se tienen en cuenta 
     las lineas vacias (sin sentencias).
 
 Para mas informacion sobre su forma de ejecucion,
