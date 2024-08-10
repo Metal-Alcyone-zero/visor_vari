@@ -5,11 +5,11 @@ VISOR_VARI
 Documentacion
 -----------------------------------------------
 
-- dependencias de librerías:
+- Dependencias de librerías:
 
-    - Tkinter
+    - Tkinter       (L. interna de python)
 
-- funcionalidades que puedo ver de VISOR_VARI:
+- Funcionalidades que puedo ver de VISOR_VARI:
 
     - Facilidad para visualizar grandes conjunto 
       de variables en sistemas (software) complejos.
@@ -19,6 +19,18 @@ Documentacion
     Es mas de proposito personal que profesional
     pero que igualmente puede servir a cualquiera.
     
+- Numero de lineas en codigo del paquete:
+
+    modulos         numero      total= 741
+
+    visorquipus     (46)
+    variables_valor (129)
+    control         (494)
+
+    readme          (72)
+
+    tenga en cuenta que no se tienen en cuenta 
+    las lineas vacias (sin sentencias).
 
 Para mas informacion sobre su forma de ejecucion,
 una vez instalada la libreria, ingrese:
@@ -30,8 +42,8 @@ readme
 La licencia es: Mozilla Public License 2.0 (MPL 2.0)
 
 La ruta github (debido a la licencia) es: 
-https://github.com/Metal-Alcyone-zero/
+https://github.com/Metal-Alcyone-zero/visor_vari
+Allí podra ver el codigo a detalle. 
+Y quizas encuentre informacion en graficos.
 
-Quizas encuentre informacion en graficos en github.
-
-Todas las versiones: 1.0 - 1.2
+Todas las versiones: 1.2 - 1.4

@@ -6,7 +6,7 @@ with open("README.rst", "r", encoding="utf-8") as hoja:
 
 setup(
         name= "visor_vari",
-        version= "1.2",
+        version= "1.4",
         author= "El Señor es el único eterno. Que la ciencia lo honre a Él.",
         author_email= "from.colombia.to.all@gmail.com",
 
