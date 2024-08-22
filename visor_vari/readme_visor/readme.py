@@ -66,8 +66,32 @@ Pero es su programa como tal, el que se encuentra \n\
 realizando cambios, \n\
 que usted por supuesto quiere ver con mayor detalle. \n\
 Esos cambios podra verlos posteriormente \n\
-en la segunda llamada a la funcion 'gentil'. \n\
-La funcion gentil podra llamarla cuantas veces quiera. \n\
+en la segunda llamada a la funcion 'gentil' en este ejemplo. \n\
 \n\
+La funcion gentil como usted sabra \n\
+podra llamarla cuantas veces quiera.\n\
+\n\
+Para efectos practicos... donde necesite \n\
+hacer revicion de alguna variable coloque \n\
+'gentil()', pero antes de eso una funcion. \n\
+Que debera crear usted, con el nombre que \n\
+usted mismo quiera y en ella, haga las \n\
+actualizaciones del objeto/imagen refer. \n\
+Por ejemplo, la de: \n\
+selda_0= x \n\
+selda_1= y \n\
+selda_2= z \n\
+... \n\
+Esto garantizara \n\
+que se le este mostrando, \n\
+la configuracion de las variables, \n\
+para este momento de la ejecucion, \n\
+en este caso practico. \n\
+Pero trabajar asi con 'viso_vari' le permite tambien, \n\
+que la funcion, la pueda usar en otros puntos. Sin\n\
+tener que indicar una por una, las variables que\n\
+se quieran ver. \n\
+Evitando asi, hacer indistinguible su propio codigo \n\
+del de visor_vari \n\
 ")
 

@@ -5,13 +5,12 @@
 
 "=============================================="
 
-#visor_vari
+# Depura: visor_vari.
 from visor_vari.mas_bajo_nivel.variables_valores import refer, ini
-import tkinter
 
 "=============================================="
 
-def ver_registro():
+def ver_registro(tkinter):
 
     class La_mini:
 
@@ -22,7 +21,7 @@ def ver_registro():
             
         def sub_ventana(self):  # Hay 2 llamandome
             
-            self.pequeven= tkinter.Toplevel()
+            self.pequeven= tkinter.Toplevel(ini.objeto_tk)
             
             self.pequeven.title("Registros de Variables " + str(ini.fase))
             ini.fase += 1
