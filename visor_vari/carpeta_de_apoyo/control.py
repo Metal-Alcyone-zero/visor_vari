@@ -6,7 +6,10 @@
 "=============================================="
 
 # Depura: visor_vari.
-from visor_vari.mas_bajo_nivel.variables_valores import refer, ini
+from see import refer
+from mas_bajo_nivel.variables_valores import ini, linea, base
+#from mas_bajo_nivel.call_al_par_subvent import segunda_sub_ventana
+from carpeta_de_apoyo.vent_en_tk import muestra_varis
 
 "=============================================="
 
@@ -21,14 +24,17 @@ def ver_registro(tkinter):
             
         def sub_ventana(self):  # Hay 2 llamandome
             
-            self.pequeven= tkinter.Toplevel(ini.objeto_tk)
-            
-            self.pequeven.title("Registros de Variables " + str(ini.fase))
+            if (base.tipo_visor == 1) or (base.tipo_visor == 3):
+                muestra_varis(linea.de_ventana)
+            elif base.tipo_visor == 2:
+                print("en control")
+                muestra_varis(linea.de_ventana)
+
             ini.fase += 1
 
             if True:    # visual y botones
 
-                dereizq= tkinter.LabelFrame(self.pequeven, padx= 10, pady= 10, bd= 0)
+                dereizq= tkinter.LabelFrame(ini.seg_tkven, padx= 10, pady= 10, bd= 0)
                 dereizq.pack (expand= True, fill= tkinter.BOTH)
 
                 "... panel lateral derecho ..."
@@ -84,7 +90,7 @@ def ver_registro(tkinter):
 
             if True:    # barra inferior
 
-                enrutamiento= tkinter.LabelFrame(self.pequeven) # marco inferior (mostrar root)
+                enrutamiento= tkinter.LabelFrame(ini.seg_tkven) # marco inferior (mostrar root)
                 enrutamiento.pack (expand= True, fill= tkinter.BOTH)
 
                 ruta_0= tkinter.Button(enrutamiento, text= "poner n° ventana en cero (0)", pady= 10, command= self.desde_cero)
@@ -107,7 +113,7 @@ def ver_registro(tkinter):
         def desde_cero(self):
             
             ini.fase= 0
-            self.pequeven.title("Registros de Variables " + str(ini.fase))
+            ini.seg_tkven.title("Registros de Variables " + str(ini.fase))
             ini.fase= 1
 
         "........................"
