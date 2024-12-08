@@ -1,6 +1,8 @@
 
-""" Modulo que saca la ventana donde se
-    pueden ver las variables """
+""" Este es un modulo intermedio entre la ventana
+    'muestra carapteres' y la subventana.
+
+    En este modulo se llama la subventana """
 
 
 "=============================================="
@@ -17,15 +19,10 @@ def ver_registro(tkinter):
             
             self.muestro_v_principal= True
             self.sub_ventana()
-            print("aqui_2")
             
-        def sub_ventana(self):  # Hay 2 llamandome
-            
-            print("aqui_3")
-            
-            muestra_varis(linea.de_ventana)
-
-            ini.fase += 1
+        def sub_ventana(self):
+                        
+            muestra_varis(1) # es uno (1) por la version simple
 
             if True:    # visual y botones
 
@@ -83,17 +80,11 @@ def ver_registro(tkinter):
                 self.gajo_8= tkinter.LabelFrame(entorno, padx= 15, pady= 15)
                 self.gajo_8.grid(row= 2, column= 2)
 
-            if True:    # barra inferior
-
-                enrutamiento= tkinter.LabelFrame(ini.seg_tkven) # marco inferior (mostrar root)
-                enrutamiento.pack (expand= True, fill= tkinter.BOTH)
-
-                ruta_0= tkinter.Button(enrutamiento, text= "poner n° ventana en cero (0)", pady= 10, command= self.desde_cero)
-                ruta_0.pack(anchor= "w")
-
             self.visual_celda_0()
 
         "........................"
+
+        "manipulacion de la ventana_muestra_carapteres"
 
         def sin_ventana_principal(self):
             
@@ -106,13 +97,7 @@ def ver_registro(tkinter):
 
         def actualizar(self):
             ini.objeto_tk.destroy()
-                        
-        def desde_cero(self):
-            
-            ini.fase= 0
-            ini.seg_tkven.title("Registros de Variables " + str(ini.fase))
-            ini.fase= 1
-
+        
         "........................"
 
         def visual_celda_0(self):

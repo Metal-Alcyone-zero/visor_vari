@@ -6,105 +6,55 @@
 
 # Depura: visor_vari.
 from mas_bajo_nivel.variables_valores import base
-from mas_bajo_nivel.clases_asistem import de_tres
 from mas_bajo_nivel.variables_valores import todo
 
 from mana.interfases_option.tipo_visor_1 import Tipo_uno
 from mana.interfases_option.tipo_visor_2 import Tipo_dos
 from mana.interfases_option.tipo_visor_3 import Tipo_tres
 from mana.interfases_option.tipo_visor_4 import Tipo_cuatro
+from mana.interfases_option.con_vent_1.tipo_visor_5 import Tipo_cinco
+from mana.interfases_option.con_vent_1.tipo_visor_6 import Tipo_seis
+from mana.interfases_option.hilo_para_vent import proceso_adyacente
 
-#from numero_para_ola.core_001 import Eninpulso
-
-"- - - - - - - - - - - -"
-
-#en_simple= Eninpulso()
-
-def acop_nucleo(conment):
-    
-    def rebolu():
-        
-        conment
-    
-        def conmutacion_por_olas(numero): # por aqui pasan los dos ultimos.
-            
-            filtrado= "en_simple.exaltada(numero)"
-
-            if filtrado != None:
-                al_bloque_principal_visor_vari(filtrado)
-                
-        if base.argment_1 == 1:
-            conmutacion_por_olas(0)
-            conmutacion_por_olas(1)
-        else:
-            conmutacion_por_olas(base.argment_1)
-            
-    return rebolu
-        
 "========================================================"
 
-class E_lenguaje_quipus:
-
-    "......... Inicializando .........."
-
-    def __init__(self, situacion):
+class Visor_vari_quipues_alfa:
         
-        de_tres.situacion= situacion
-                        
-        self.iniciotekinte()
-
-    def iniciotekinte(self):
+    def primer_modo(self):      # uno a uno
+        Tipo_uno()
         
-        # abriendo modulos
-        if base.tipo_visor == 1: # uno a uno
-            print("caso _1...")
-            Tipo_uno()
+    def segundo_modo(self):     # el 1er_gentil abre todos los suyos 
+        Tipo_dos()
+
+    def tercer_modo(self):      # abre puntual del 1er_gentil
+        Tipo_tres()
         
-        elif base.tipo_visor == 2: # serie todos
-            print("caso _2...")
-            Tipo_dos()
-
-        elif base.tipo_visor == 3: # serie puntual
-            print("caso _3...")
-            Tipo_tres(de_tres.situacion)
+    def cuarto_modo(self):      # todo puntuales (en paralelo)
+        Tipo_cuatro()
         
-        elif base.tipo_visor == 4: # paralelo
-            print("caso _4...")
-            Tipo_cuatro()
-        
-        elif base.tipo_visor == 5: # paralelo, compacto
-            print("caso _5...")
-            #Tipo_cinco()
+sin_ventana= Visor_vari_quipues_alfa()
 
-def al_bloque_principal_visor_vari(arg_1_transformado):
-    E_lenguaje_quipus(arg_1_transformado)
 
-"------------------------------------"
+class Visor_vari_quipues_beta_a:
+            
+    def primer_modo(self, vent):
+        proceso_adyacente(1, vent)
 
-@acop_nucleo
-def call_01():
-    ""
-        
-class Entradas:
-        
-    def uno_de_cinco(self):
-        al_bloque_principal_visor_vari(base.nada)
-    
-    def dos_de_cinco(self):
-        al_bloque_principal_visor_vari(base.nada)
-    
-    def tres_de_cinco(self):
-        al_bloque_principal_visor_vari(base.posi_driel)
-        
-    def cuatro_de_cinco(self):
-        al_bloque_principal_visor_vari(base.nada)
+    def segundo_modo(self, vent):
+        proceso_adyacente(2, vent)
 
-    "- - - - - - - -"
+con_ventana_1= Visor_vari_quipues_beta_a()
 
-    def cinco_de_cinco(self):
-        ""
 
-tipo= Entradas()
+class Visor_vari_quipues_beta_b:
+            
+    def primer_modo(self, vent):
+        proceso_adyacente(3, vent)
+
+    def segundo_modo(self, vent):
+        proceso_adyacente(4, vent)
+
+con_ventana_2= Visor_vari_quipues_beta_b()
 
 "------------------------------------"
 
@@ -129,50 +79,62 @@ def ultimo_numero(act_num):
 
 def gentil(numero= None, extension= None, objet_supre= None):
     
-    # depositando valores
-    base.argment_1= numero          # Tiene dos maneras de ingresar al bloque P.
-    base.argment_3= objet_supre     # Solo para la cuarta forma del visualizacion.
+    if True: # depositando valores
+        
+        base.argment_1= numero  # Alojo el 1er atributo de gentil
+        objetivo= objet_supre   # Solo para la cuarta forma del visualizacion.
 
-    # opciones
+    if True: # filtrando configuraciones de 'sin ventana'
     
-    if (numero == None) and (extension == None) and (objet_supre == None):
-        
-        base.tipo_visor= 1
-        tipo.uno_de_cinco()
-        
-        base.argment_1= 1
-    
-    if (numero != None) and (extension == "serie") and (objet_supre == None):
-        
-        if base.posi_driel != None:
+        if (numero == None) and (extension == None) and (objetivo == None):
             
-            base.tipo_visor= 3
-            tipo.tres_de_cinco()
-        else:
-            base.tipo_visor= 2
-            tipo.dos_de_cinco()
-
-    if (numero != None) and (extension == "paralelo") and (objet_supre == None):
+            base.tipo_visor= 1
+            sin_ventana.primer_modo()
+            
+            base.argment_1= 1
         
-        base.tipo_visor= 4
-        tipo.cuatro_de_cinco()
+        if (numero != None) and (extension == "serie") and (objetivo == None):
+            
+            if base.posi_driel != None:
+                
+                base.tipo_visor= 3
+                sin_ventana.tercer_modo()
+            else:
+                base.tipo_visor= 2
+                sin_ventana.segundo_modo()
 
-    "- - - - - - - -"
+        if (numero != None) and (extension == "paralelo") and (objetivo == None):
+            
+            base.tipo_visor= 4
+            sin_ventana.cuarto_modo()
 
-    if (numero != None) and (extension == "serie") and (objet_supre != None):
-        
-        if base.posi_driel != None:
+    "- - - - - - - - - - - - - - - - - - -"
+
+    if True: # filtrando configuraciones de 'con ventana'
+
+        if (numero == None) and (extension == None) and (objetivo != None):
             
             base.tipo_visor= 5
-            tipo.tres_de_cinco()
-        else:
-            base.tipo_visor= 6
-            tipo.dos_de_cinco()
+            con_ventana_1.primer_modo(objetivo)
+            
+            base.argment_1= 1
+        
+        if (numero != None) and (extension == "serie") and (objetivo != None):
+            
+            if base.posi_driel != None:
+                
+                base.tipo_visor= 7
+                con_ventana_2.primer_modo(objetivo)
+            else:
+                base.tipo_visor= 6
+                con_ventana_1.segundo_modo(objetivo)
 
-    if (numero != None) and (extension == "paralelo") and (objet_supre != None):
-        base.tipo_visor= 7
+        if (numero != None) and (extension == "paralelo") and (objetivo != None):
+            
+            base.tipo_visor= 8
+            con_ventana_2.segundo_modo(objetivo)
 
-    # ultimo_numero(base.argment_1)
+    # ultimo_numero(base.argment_1) # para otra version
 
 def ultimate():
     

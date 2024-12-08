@@ -20,25 +20,20 @@ class Tipo_cuatro:
     def __init__(self):
 
         if base.argment_1 == todo.other_ola:
-            
-            print("n° del gentil: " + str(base.argment_1))
-            
+                        
             ejecuta_riel.en_paralelo(actor_02) # usa paralelo
             
-            if primer_gent.entry_modifor_4 == True:
+            if permiso_a.caso_4 == True:
                 
-                print("hasta aq... riel ha sido tratado ya")
                 enumer_sub()
                 
                 objeto= tk.Tk()
                 ini.objeto_tk= objeto
                 
-                objeto.geometry("200x25")
-                objeto.title (str(de_tres.situacion) + " diseñemos programas")
+                objeto.geometry("250x25")
+                objeto.title ("visor_vari")
 
-                # print(de_tres.situacion)
-                linea.de_ventana= 1
-                ini.caso= de_tres.situacion
+                linea.numero_de_ola= todo.other_ola
                 linea.sub_numero= pulso.sub_cuenta
 
                 primer_marco= tk.LabelFrame(objeto, bd= 0)
@@ -49,5 +44,5 @@ class Tipo_cuatro:
                 objeto.mainloop()
 
                 base.enumer_geltil += 1
-                primer_gent.entry_modifor_4= False
+                permiso_a.caso_4= False
             

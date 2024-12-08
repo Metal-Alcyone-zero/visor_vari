@@ -8,7 +8,6 @@
 
 "=========================================="
 
-#from numero_para_ola.catalogacion_01 import gentil
 from visorquipus import gentil, ultimate, riel
 from see import refer
 
@@ -39,14 +38,14 @@ def ejecutando(opcion, hola):
             gentil()
             refer.selda_0= 3
             gentil()
-            refer.selda_0= 4
+            """refer.selda_0= 4
             gentil()
             refer.selda_0= 5
             gentil()
             refer.selda_0= 8
             gentil()
             refer.selda_0= 9
-            gentil()
+            gentil()"""
 
             tu -= 1
     
@@ -122,9 +121,12 @@ def ejecutando(opcion, hola):
             print("hola n°: " + str(nume)); nume += 1
             print()
 
-            un_d= [0,1]
-
-            riel(un_d)
+            #un_d= [0,1]
+            
+            riel(0, 1)
+            
+            #bo= True
+            #riel(un_d, bo)
 
             refer.selda_0= 1
             gentil(1, "paralelo")
@@ -140,7 +142,7 @@ def ejecutando(opcion, hola):
             gentil(1, "paralelo")
             refer.selda_0= 38
             gentil(1, "paralelo")
-
+            
             tu -= 1
             
             ultimate()

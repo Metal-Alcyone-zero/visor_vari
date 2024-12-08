@@ -8,81 +8,124 @@ import tkinter as tk
 
 "- - - - - - - - - - - "
 
-class Principio:
+class Ventanas:
 
     def __init__(self):
                 
         self.objeto_tk= None
         self.seg_tkven= None
-        
-        self.caso= 1
-        self.fase= 0
-        
-        self.obj_paracaso_2= None
+                
+ini= Ventanas()
+""" 
+                        convocadores:
+                                        vek
+                                        tv1
+                                        tv2
+                                        tv3
+                                        tv4
 
-ini= Principio()
+                        empleadores:
+                                        rvs
+
+                                        tv2
+                                        tv3
+                                        tv4
+
+"""
+
+
+class Sistema:
+    
+    def __init__(self):
+        
+        self.nada= None
+        self.argment_1= None
+        self.enumer_geltil= 0
+        self.tipo_visor= 0
+        self.posi_driel= None
+        self.posi_atada= None        
+
+base= Sistema()
+""" 
+                        convocadores:
+                                        vsq
+                                        tv3
+                                        
+                        empleadores:
+                                        tv2
+                                        
+                                        tv3
+
+"""
+
+"- - - - - - - - - - - "
 
 "=========================================="
 
-class Paso:
+class Maquina_calcula_entrada_de_numero:
     
     def __init__(self):
                 
         self.escalon= 1
         self.cambio_de_fase= False
         self.sub_cuenta= 0
-        
         self.entrada= 0
-        self.fase= 0
 
-        self.conteo_de_las_entradas= 0
+pulso= Maquina_calcula_entrada_de_numero()
+""" 
+                        convocadores:
+                                        opf
+                                        
+                        empleadores:
+                                        tv2
+                                        tv3
+                                        tv4
 
-pulso= Paso()
+"""
 
 
-class Linea_viva:
+class Enumeracion_de_ventanas:
     
     def __init__(self):
         
-        self.de_ventana= 0
+        self.numero_de_ola= 0
         self.sub_numero= 1
+        
         self.enau_ment= 0
         
-        self.contador_3= 0
+linea= Enumeracion_de_ventanas()
+""" 
+                        convocadores:
+                                        tv1
+                                        tv2
+                                        tv3
+                                        tv4
+                                        
+                        empleadores:
+                                        vek
 
-linea= Linea_viva()
-
-
-class Almacenaje:
-    
-    def __init__(self):
-        
-        self.nada= None
-        
-        self.argment_1= None
-        self.argment_3= None
-
-        self.tipo_visor= 0
-        
-        self.unapasada_para_2= True
-        self.sumador_de_2= 0
-        self.activo_para_2= False
-        
-        self.posi_driel= None
-        self.posi_atada= None
-        self.enumer_geltil= 0
-
-base= Almacenaje()
+"""
 
 
-class Flujo:
+class Clase_de_ola:
     
     def __init__(self):
         
         self.limit= 0
         self.other_ola= 1
     
-todo= Flujo()
+todo= Clase_de_ola()
+""" 
+                        convocadores:
+                                        vsq
+                                        
+                        empleadores:
+                                        tv4
+                                        scp
+
+                                        vsq
+
+"""
 
 
 class Primer:
@@ -92,8 +135,20 @@ class Primer:
         self.dato_a= None
         self.llave= True
         
-        self.dale_puntual= False
-        self.entry_modifor_4= False
+        self.caso_3= False
+        self.caso_4= False
 
-primer_gent= Primer()
+permiso_a= Primer()
+""" 
+                        convocadores:
+                                        tv3
+                                        tv4
+                                        
+                        empleadores:
+                                        scp
+
+                                        tv3
+                                        tv4
+
+"""
 

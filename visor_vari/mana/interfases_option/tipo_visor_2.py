@@ -15,36 +15,25 @@ from mana.elementos_de_conducto.conducto_dos import *
 
 "========================================================"
 
-class Primer:
-    
-    def __init__(self):
-        
-        self.dato_a= None
-        self.llave= True
-
-primer_gent= Primer()
-
 class Tipo_dos:
 
     def __init__(self):
 
-        if primer_gent.llave == True:
-            primer_gent.dato_a= base.argment_1
-            primer_gent.llave= False
+        if permiso_a.llave == True:
+            permiso_a.dato_a= base.argment_1
+            permiso_a.llave= False
 
-        if base.argment_1 == primer_gent.dato_a:
+        if base.argment_1 == permiso_a.dato_a:
 
             enumer_sub()
             
             objeto= tk.Tk()
             ini.objeto_tk= objeto
             
-            objeto.geometry("200x25")
-            objeto.title (str(de_tres.situacion) + " diseñemos programas")
+            objeto.geometry("250x25")
+            objeto.title ("visor_vari")
 
-            # print(de_tres.situacion)
-            linea.de_ventana= 1
-            ini.caso= de_tres.situacion
+            linea.numero_de_ola= todo.other_ola
             linea.sub_numero= pulso.sub_cuenta
 
             primer_marco= tk.LabelFrame(objeto, bd= 0)

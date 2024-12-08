@@ -1,0 +1,26 @@
+
+AQUI SEÑALO EL ULTIMO AVANCE ALCANZADO Y LO SIGUIENTE QUE SE
+ESPERA ALCANZAR
+
+
+============================================================
+
+
+Alcanzado:
+
+- Todos las funciones visor_vari 'sin ventana'
+  han sido formadas.
+
+- mucha limpieza a un codigo que ya es funcional
+
+Aspiracion:
+
+- una buena documentacion.
+
+    - mejorar el readme para la ayuda al usuario
+    - hacer un guardado en bunquer
+    - tener un tiempo de prueva
+    
+      (preferiblemente instalarla y hacer que
+      se auto-depure a si misma)
+

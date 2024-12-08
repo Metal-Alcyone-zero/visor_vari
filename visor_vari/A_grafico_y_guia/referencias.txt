@@ -1,0 +1,20 @@
+
+Estan son la abreviaciones de los modulos que se
+emplean en la libreria visor_vari
+
+- - - - - - - - - - - - - - - - - -
+
+NOMBRES                 REFERENCIA
+
+- visorquipus           (vsq)
+- see                   (see)
+- revisar               (rvs)
+- vent_en_tk            (vek)
+- oper_funcional        (opf)
+- script_poci           (scp)
+
+- tipo_visor_1          (tv1)
+- tipo_visor_2          (tv2)
+- tipo_visor_3          (tv3)
+- tipo_visor_4          (tv4)
+

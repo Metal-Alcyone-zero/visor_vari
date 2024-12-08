@@ -10,6 +10,8 @@ from ejecutopcion.sin_ventana import ejecutando
 "==========================================="
 
 if __name__ == "__main__":
+    
+    opcion= 0
         
     def entra():
     
@@ -39,6 +41,9 @@ if __name__ == "__main__":
     #entra()
     #opcion= 3; print("ent_3")
     #entra()
-    opcion= 4; print("ent_4")
-    entra()
+    #opcion= 4; print("ent_4")
+    #entra()
 
+    from ejecutopcion import con_ventana_2
+    con_ventana_2
+    

@@ -21,10 +21,12 @@ class Tipo_uno:
         objeto= tk.Tk()
         ini.objeto_tk= objeto
         
-        linea.de_ventana= 1
+        linea.numero_de_ola= 1
+        linea.sub_numero= linea.enau_ment + 1
+        linea.enau_ment= linea.sub_numero
         
-        objeto.geometry("200x25")
-        objeto.title ("diseñemos programas")
+        objeto.geometry("250x25")
+        objeto.title ("visor_vari")
 
         self.primer_marco= tk.LabelFrame(objeto, bd= 0)
         self.primer_marco.pack(expand= True, fill= tk.BOTH)
