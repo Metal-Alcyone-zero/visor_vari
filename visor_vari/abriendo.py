@@ -44,6 +44,5 @@ if __name__ == "__main__":
     #opcion= 4; print("ent_4")
     #entra()
 
-    from ejecutopcion import con_ventana_2
-    con_ventana_2
+    import ejecutopcion.mi_trabajo.vent_adm 
     

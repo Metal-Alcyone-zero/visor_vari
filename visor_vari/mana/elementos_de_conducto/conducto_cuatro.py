@@ -4,10 +4,10 @@
 
 "============================================="
 
-                                                                            # ULTIMO_CONVOCADOR         APARENTEMENTE                          #
+                                                                                        # ULTIMO_CONVOCADOR         APARENTEMENTE                          #
 
-from mas_bajo_nivel.variables_valores import base                           # (vsq)                     le establece valores de arranque
-from mas_bajo_nivel.variables_valores import todo                           # (vsq)                     ° le da el numero a la nueva ola
+from mas_bajo_nivel.variables_valores import base                            # (vsq)                     le establece valores de arranque
+from mas_bajo_nivel.variables_valores import todo                            # (vsq)                     ° le da el numero a la nueva ola
 
 from mas_bajo_nivel.variables_valores import ini                            
 from mas_bajo_nivel.variables_valores import pulso                          
@@ -22,7 +22,7 @@ from carpeta_de_apoyo.oper_fucional import enumer_sub
 
 from mas_bajo_nivel.variables_valores import tk                             
 
-"============================================="                             # REDEFINEN
+"============================================="                                         # REDEFINEN
 
 """ 
     Muestra los datos segun el numero

@@ -4,7 +4,7 @@
 
 "============================================="
 
-                                                        # ULTIMO_CONVOCADOR         APARENTEMENTE                          #
+                                                                # ULTIMO_CONVOCADOR         APARENTEMENTE                          #
 
 from mas_bajo_nivel.variables_valores import ini        
 from mas_bajo_nivel.variables_valores import linea      
@@ -12,7 +12,7 @@ from carpeta_de_apoyo.oper_fucional import burbuja
 
 from mas_bajo_nivel.variables_valores import tk         
 
-"============================================="         # REDEFINEN
+"============================================="                 # REDEFINEN
 
 """
     Este modulo trabaja sin sacar una ventana.

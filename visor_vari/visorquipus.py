@@ -4,17 +4,14 @@
 
 "========================================================"
 
-# Depura: visor_vari.
-from mas_bajo_nivel.variables_valores import base
-from mas_bajo_nivel.variables_valores import todo
+#visor_vari.
+from mas_bajo_nivel.variables_valores import *
 
-from mana.interfases_option.tipo_visor_1 import Tipo_uno
-from mana.interfases_option.tipo_visor_2 import Tipo_dos
-from mana.interfases_option.tipo_visor_3 import Tipo_tres
-from mana.interfases_option.tipo_visor_4 import Tipo_cuatro
-from mana.interfases_option.con_vent_1.tipo_visor_5 import Tipo_cinco
-from mana.interfases_option.con_vent_1.tipo_visor_6 import Tipo_seis
-from mana.interfases_option.hilo_para_vent import proceso_adyacente
+from mana.interfases_option.tipo_visor_1 import *
+from mana.interfases_option.tipo_visor_2 import *
+from mana.interfases_option.tipo_visor_3 import *
+from mana.interfases_option.tipo_visor_4 import *
+from mana.interfases_option.hilo_para_vent import *
 
 "========================================================"
 

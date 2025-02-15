@@ -4,8 +4,6 @@
 
 "============================================="
 
-import tkinter as tk
-
 from visorquipus import gentil
 from see import refer
 
@@ -55,16 +53,18 @@ def minou():
     milu(2)
     gentil(2, "serie", principal.vent)
 
-principal.vent= tk.Tk()
+def abriendo(tk):
 
-principal.vent.title("con la ventana_1")
-principal.vent.geometry("250x200")
+    principal.vent= tk.Tk()
 
-bon_1= tk.Button(principal.vent, text= "tipo_1", command= minoury)
-bon_1.pack()
+    principal.vent.title("con la ventana_1")
+    principal.vent.geometry("250x200")
 
-bon_2= tk.Button(principal.vent, text= "tipo_2", command= minou)
-bon_2.pack()
+    bon_1= tk.Button(principal.vent, text= "tipo_1", command= minoury)
+    bon_1.pack()
 
-principal.vent.mainloop()
+    bon_2= tk.Button(principal.vent, text= "tipo_2", command= minou)
+    bon_2.pack()
+
+    principal.vent.mainloop()
 
